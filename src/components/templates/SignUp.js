@@ -10,7 +10,6 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { useState, useContext } from 'react';
-
 import { doSignup, updateUserInfo } from "../../lib/api";
 import { UserContext } from '../../context/UserContext';
 import { validateBio, validateEmail, validateName, validatePhone, validateTwoPassword } from '../../lib/formValidation';

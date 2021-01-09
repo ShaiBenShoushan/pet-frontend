@@ -1,7 +1,6 @@
 import axios from 'axios';
 import cookie from 'js.cookie';
-import { useContext } from 'react';
-import { UserContext } from '../context/UserContext';
+
 
 const baseUrl = "http://localhost:5000";
 
