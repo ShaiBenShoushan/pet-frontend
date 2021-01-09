@@ -59,7 +59,7 @@ function SignIn(props) {
     // }
 
 
-    const data = await doLogin(email, password);
+    await doLogin(email, password);
     doLogin(email, password)
       .then(response => {
         props.onSignIn(response);

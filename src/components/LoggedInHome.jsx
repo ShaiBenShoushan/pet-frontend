@@ -7,7 +7,7 @@ import { UserContext } from "../context/UserContext";
 import GlobalNav from "./GlobalNav";
 function LoggedInHomePage(props) {
     const context = useContext(UserContext);
-    const { _id, firstName, lastName, isAdmin } = context.user;
+    const { firstName, lastName } = context.user;
     return (
         <Grid
             container

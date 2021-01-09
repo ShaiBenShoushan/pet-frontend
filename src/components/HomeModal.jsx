@@ -1,21 +1,9 @@
 import Modal from 'react-modal';
 import { useState } from 'react';
-import { Button, makeStyles } from '@material-ui/core'
+import { Button } from '@material-ui/core'
 
 
-const useStyles = makeStyles((theme) => ({
-    modalStyle: {
 
-        height: "500px",
-        width: "400px",
-        border: "2px solid black",
-
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-    }
-}));
 const customStyles = {
     overlay: {
         backgroundColor: "#212121",
