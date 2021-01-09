@@ -1,0 +1,36 @@
+html{
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #212121;
+  color: blueviolet;
+  font-family: 'Audiowide', cursive;
+  
+}
+input, select, textarea{
+  color: blueviolet;
+  background-color: #212121;
+  border: none;
+  border: 0.2rem solid blueviolet;
+  border-radius: 4px;
+  margin-left: 1rem;
+}
+a {
+  text-decoration: none;
+}
+button{
+  color: blueviolet;
+}
+
+
+#root{
+  height: 100%;
+}
