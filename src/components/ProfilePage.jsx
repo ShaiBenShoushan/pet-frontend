@@ -1,4 +1,4 @@
-// import SignUp from "./unused/SignUp";
+
 import { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../context/UserContext';
 import { getInfo } from '../lib/api';

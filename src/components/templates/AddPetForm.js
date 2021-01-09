@@ -83,7 +83,7 @@ function SignUp(props) {
           setFormInfo(response.data);
         });
     }
-  }, []);
+  }, [props.match.params.petId]);
 
 
   function handleChange(e) {

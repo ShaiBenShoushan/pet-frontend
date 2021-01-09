@@ -23,22 +23,11 @@ function SearchPage(props) {
     return (
         <>
             {props.loggedIn && <GlobalNav />}
-            <Grid container
-                direction="column"
-                alignItems="center"
-                justify="center"
-                alignItems="center"
-                className={classes.paper}
-            >
+            <Grid container className={classes.paper}>
                 <Grid container>
                     <SearchBar onResultsChange={onResultsChange} />
                 </Grid>
-                <Grid container
-                    direction="column"
-                    alignItems="center"
-                    justify="center"
-                    alignItems="center"
-                >
+                <Grid container className={classes.paper}>
                     <SearchResults pets={results} />
                 </Grid>
             </Grid>

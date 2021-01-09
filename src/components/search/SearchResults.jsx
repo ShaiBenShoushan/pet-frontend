@@ -1,4 +1,3 @@
-import { Grid, makeStyles, Box } from '@material-ui/core';
 import PetCard from '../pet/PetCard';
 
 function SearchResults(props) {

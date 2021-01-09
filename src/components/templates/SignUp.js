@@ -93,8 +93,7 @@ export default function SignUp(props) {
 
   async function onSignUp(e) {
     e.preventDefault();
-    // console.log(validateName(formInfo.firstName), validateName(formInfo.lastName), validateEmail(formInfo.email),validateTwoPassword(formInfo.password, formInfo.passwordVerif),validatePhone(formInfo.phoneNumber),validateBio(formInfo.bio))
-    // if (validateName(formInfo.firstName) && validateName(formInfo.lastName) && validateEmail(formInfo.email) && validateTwoPassword(formInfo.password, formInfo.passwordVerif) && validatePhone(formInfo.phoneNumber) && validateBio(formInfo.bio)) {
+    if (validateName(formInfo.firstName) && validateName(formInfo.lastName) && validateEmail(formInfo.email) && validateTwoPassword(formInfo.password, formInfo.passwordVerif) && validatePhone(formInfo.phoneNumber) && validateBio(formInfo.bio)) {
       if (props.loggedIn) {
         const user = await updateUserInfo(context.user._id, formInfo);
         console.log(user);
@@ -104,10 +103,9 @@ export default function SignUp(props) {
           console.log(response);
         });
       }
-    // }
-    // else {
-    //   console.log("Bad Info", formInfo);
-    // }
+    }
+    else {
+    }
   }
 
   function handleChange(e) {

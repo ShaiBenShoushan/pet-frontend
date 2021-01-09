@@ -2,7 +2,7 @@ import { Grid, Button } from "@material-ui/core";
 import { useState } from "react";
 import AdvancedSearch from "./AdvancedSearch";
 import { searchPets } from '../../lib/api';
-import { withRouter, generatePath, push } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import qs from 'querystring';
 import { makeStyles } from '@material-ui/core/styles';
 
