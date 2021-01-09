@@ -11,7 +11,6 @@ function MyPetsList(props) {
                         admin={props.admin}
                         key={Math.random()}
                         data={pet}
-                        admin={props.admin}
                     />
                 )
             })}

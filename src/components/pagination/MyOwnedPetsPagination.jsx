@@ -20,7 +20,7 @@ function MyOwnedPetsPagination(props) {
                 setPage(prev => prev + 1);
             });
 
-    }, []);
+    }, [props.match.params.id, page]);
 
     function fetchData() {
         petOwnedPagination(props.match.params.id, page, itemLimit)

@@ -1,7 +1,4 @@
 
-import { useContext, useEffect, useState } from 'react';
-import { UserContext } from '../context/UserContext';
-import { getInfo } from '../lib/api';
 import SignUp from './templates/SignUp';
 function ProfilePage(props) {
     return (

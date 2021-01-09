@@ -1,7 +1,7 @@
 
 import './App.css';
 import LoggedOutHomePage from './components/LoggedOutHome';
-import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import SearchPage from './components/search/SearchPage';
 import MyPets from './components/pet/MyPets';
 import LoggedInHomePage from './components/LoggedInHome';

@@ -34,7 +34,6 @@ const customStyles = {
 
 function HomeModal(props) {
 
-    const classes = useStyles();
     const [modalIsOpen, setIsOpen] = useState(false);
 
     function openModal() {

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { adopt, foster, getPetById, returnPet, savePetForLater } from "../../lib/api";
 import { Button, makeStyles } from "@material-ui/core";
 
@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function PetPage(props) {
-    console.log("imhere", props);
     const { id, petId } = props.match.params;
     const classes = useStyles();
     const petInitData = {
@@ -34,9 +33,8 @@ function PetPage(props) {
 
     const [petData, setPetData] = useState(petInitData);
     useEffect(() => {
-        getPetById(props.match.params.petId)
+        getPetById(petId)
             .then(response => {
-                console.log(response);
                 setPetData(response.data);
                 setPetStatus(response.data.adoptionStatus);
                 if (response.data.adoptionStatus === "Adopted") {
@@ -45,10 +43,9 @@ function PetPage(props) {
                     setPetButtonStatus("Adopt");
                 }
             });
-    }, []);
+    }, [petId]);
 
     const {
-        name,
         pic,
         adoptionStatus,
         breed,
@@ -73,7 +70,6 @@ function PetPage(props) {
             setPetButtonStatus("Adopt");
             foster(id, petId)
                 .then(response => {
-                    console.log(response);
                 })
         }
         else {
@@ -82,7 +78,6 @@ function PetPage(props) {
             setPetButtonStatus("Foster");
             adopt(id, petId)
                 .then(response => {
-                    console.log(response);
                 })
         }
 

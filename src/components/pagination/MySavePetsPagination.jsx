@@ -19,7 +19,7 @@ function MySavedPetsPagination(props) {
                 setPage(prev => prev + 1);
             });
 
-    }, []);
+    }, [props.match.params.id, page]);
 
     function fetchData() {
         petSavedPagination(props.match.params.id, page, itemLimit)

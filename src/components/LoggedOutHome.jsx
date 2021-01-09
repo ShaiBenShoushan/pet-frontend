@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import HomeModal from './HomeModal';
 import SignUp from './templates/SignUp';
 import SignIn from './templates/SignIn';
-import { withRouter, generatePath } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
     main: {
         "margin-top": "10rem",

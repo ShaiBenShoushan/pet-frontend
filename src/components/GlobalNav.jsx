@@ -1,5 +1,5 @@
 import { Grid, Button } from "@material-ui/core";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 import auth from '../lib/auth';
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 function GlobalNav(props) {
     const classes = useStyles();
     const context = useContext(UserContext);
-    const { _id, firstName, lastName, isAdmin } = context.user;
+    const { _id, isAdmin } = context.user;
 
     function onLogout(e) {
         auth.logout(() => {

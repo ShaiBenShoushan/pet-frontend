@@ -8,10 +8,9 @@ function UserPage(props) {
     useEffect(() => {
         getFullUser(props.match.params.userId)
             .then(response => {
-                console.log(response);
                 setUser(response.data);
             });
-    }, [])
+    }, [props.match.params.userId])
     console.log(user);
     return (
         <div>
